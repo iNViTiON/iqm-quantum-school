@@ -10,4 +10,5 @@ wheels/
 .venv
 
 .direnv/*
+.ipynb_checkpoints/
 secret.py

@@ -59,5 +59,6 @@ Zed REPL — how to use it (concise)
 1. Open the project folder in Zed.
 2. Ensure the REPL uses the same interpreter as the project (Nix shell or `.venv`).
 3. Open a Python file such as `day1.py`.
-4. Open the REPL (command palette) or use the editor's "send selection to REPL" command.
-5. Select lines or a code region and send them to the REPL to run just that part of the script.
+4. Open the REPL (command palette) or use the editor's "repl: refresh kernelspecs" command.
+5. Move the text cursor to the code block you want to run, then use editor's "repl: run" command.
+6. If Zed REPL doesn't found ipython kernel then you might need to setting up the kernel with `uv run ipython kernel install --user --env VIRTUAL_ENV $(pwd)/.venv --name=project`. Run the "repl: refresh kernelspecs" command again to let editor discover new kernelspecs.
