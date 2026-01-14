@@ -12,3 +12,6 @@ wheels/
 .direnv/*
 .ipynb_checkpoints/
 secret.py
+
+# output
+day3-2_playlist.html
